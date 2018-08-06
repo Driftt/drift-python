@@ -2,3 +2,6 @@
 venv/*
 *.pyc
 __pycache__
+build/
+dist/
+drift_python.egg-info/

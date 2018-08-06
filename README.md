@@ -39,7 +39,7 @@ Read the docs here: [Contacts API](https://devdocs.drift.com/docs/contact-model)
     
 - `drift.contacts.add_tags()`
     - contact_id (required)
-    - tags - (required)
+    - tags (required)
     
     Example:
     ```
@@ -77,7 +77,7 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
     
     Example:
     ```
-    drift.conversations.create(
+    drift.conversations.create_message(
         conversation_id=1,
         org_id=1,
         type='chat'
