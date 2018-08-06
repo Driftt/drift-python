@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="img/drift_python.png" width="300"/>
+</p>
+
 # Drift Python
 A [Drift API](https://devdocs.drift.com) wrapper written in Python.
 
