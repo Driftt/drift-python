@@ -96,7 +96,7 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
     
     Example:
     ```
-    drift.conversions.get_metrics(
+    drift.conversations.get_metrics(
         {
           "metrics": [
             {

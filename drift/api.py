@@ -22,7 +22,7 @@ class Drift(object):
             'Content-Type': self.CONTENT_TYPE
         }
         self.contacts = Contact(self)
-        self.conversions = Conversation(self)
+        self.conversations = Conversation(self)
 
     def post(self, url, data, **kwargs):
         response = requests.post(url, data=json.dumps(data), headers=self._headers, **kwargs)
