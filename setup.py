@@ -13,5 +13,5 @@ setup(name='drift-python',
       zip_safe=False,
       license='MIT',
       install_requires=[
-          'requests==2.19.1',
+          'requests==2.20.0',
       ])
