@@ -77,6 +77,7 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
     - org_id (required)
     - type (required)
     - body (optional)
+    - buttons (optional)
     - edited_message_id (optional)
     - edit_type (optional)
     
