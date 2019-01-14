@@ -63,5 +63,5 @@ class Conversation(object):
 
         Note: Also drops unknown keys.
         """
-        allowed_keys = ['edited_message_id', 'edit_type']
+        allowed_keys = ['edited_message_id', 'edit_type', 'body']
         return normalize_keys(allowed_keys, kwargs)
