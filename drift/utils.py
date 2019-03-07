@@ -12,6 +12,6 @@ def normalize_keys(allowed_keys, payload):
     data = {}
     message_keys = payload.keys()
     valid_keys = [k for k in message_keys if k in allowed_keys]
-    for k, v in valid_keys:
+    for k in valid_keys:
         data[camelcase(k)] = payload.get(k)
     return data
