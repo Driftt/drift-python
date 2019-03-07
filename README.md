@@ -23,11 +23,7 @@ Read the docs here: [Contacts API](https://devdocs.drift.com/docs/contact-model)
     - contact_id (required)
     - email (optional)
     - limit (optional)
-
-- `drift.contacts.list()`
-    - limit (optional) - defaults to `40` 
-    - cursor (optional)
-
+    - 
 - `drift.contacts.create()`
     - **attributes (required)
     
