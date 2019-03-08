@@ -120,6 +120,23 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
     )
   
     ```
+
+## Users
+Read the docs here [Users API](https://devdocs.drift.com/docs/user-model)
+
+**Available Methods**
+
+- `drift.users.get()`
+    - user_id (required)
+    
+- `drift.users.list()`
+
+- `drift.users.update()`
+    - user_id (required)
+    - **attributes (required)
+
+    Example:
+    drift.users.update(243266, phone='555-555-5555')
     
  
 ## Contributors
@@ -130,4 +147,4 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
 ## Support / Feedback / Bugs
 For support and feedback, you can find us on [Slack](https://join.slack.com/t/devdrift/shared_invite/enQtMzg4MTI3NDk5NDQ0LWUwMWYzZTkyMmQ1YjdkNjkwZDg2Mzk2YjAyMDg4MWViYmIzZjVhZTczNDQwMDVjOGRjZGU5OTkxMWQ0ZGU0Mjg)!
 
-If you've found a bug, feel free to open up a PR with a fix or submit an issue.
+If you've found a bug, feel free to open up a PR with a fix or submit an issue. Let us know in the dev slack!

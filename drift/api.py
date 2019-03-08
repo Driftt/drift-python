@@ -2,6 +2,7 @@ import json
 import requests
 from .contacts import Contact
 from .conversations import Conversation
+from .users import User
 from . import __version__
 
 
@@ -23,6 +24,7 @@ class Drift(object):
         }
         self.contacts = Contact(self)
         self.conversations = Conversation(self)
+        self.users = User(self)
 
     def post(self, url, data, **kwargs):
         response = requests.post(url, data=json.dumps(data), headers=self._headers, **kwargs)
