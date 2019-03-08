@@ -1,5 +1,5 @@
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
-[![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
+[![PyPI version](https://badge.fury.io/py/drift-python.svg)](https://badge.fury.io/py/drift-python)
 
 <p align="center">
     <img src="img/drift_python.png" width="300"/>
