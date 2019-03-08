@@ -3,7 +3,8 @@ from .errors import InvalidFormatError
 
 class Contact(object):
     """
-
+    Contains API routes for querying and manipulating contacts.
+    https://devdocs.drift.com/docs/contact-model
     """
 
     CONTACT_URL_BASE = 'https://driftapi.com/contacts'
@@ -17,12 +18,6 @@ class Contact(object):
         if kwargs:
             params = kwargs
         return self.client.get(url, params=params)
-
-    def list(self, limit=40, cursor=None):
-        params = {'limit': limit}
-        if cursor:
-            params.update({'cursor': cursor})
-        return self.client.get(self.CONTACT_URL_BASE, params=params)
 
     def create(self, **attributes):
         data = {'attributes': attributes}

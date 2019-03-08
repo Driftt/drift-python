@@ -4,6 +4,7 @@ from .utils import normalize_keys
 
 class Conversation(object):
     """
+    Contains API routes for querying and manipulating conversations.
     https://devdocs.drift.com/docs/conversation-overview
     """
 
