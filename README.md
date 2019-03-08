@@ -1,3 +1,6 @@
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+[![PyPI version](https://badge.fury.io/py/drift-python.svg)](https://badge.fury.io/py/drift-python)
+
 <p align="center">
     <img src="img/drift_python.png" width="300"/>
 </p>
