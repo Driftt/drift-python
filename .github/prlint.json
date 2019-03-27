@@ -1,0 +1,8 @@
+{
+    "title": [
+      {
+        "pattern": "[a-zA-Z]+-\\d{1,4}",
+        "message": "Don't forget to add the Jira ticket in the title"
+      }
+    ]
+  }
