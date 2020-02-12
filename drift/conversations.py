@@ -21,10 +21,11 @@ class Conversation(object):
         return self.client.get(url=url, params=params)
 
     def list(self, limit=50, next_=None):
+        url = "{}/{}".format(self.CONVERSATIONS_BASE_URL, "list")
         params = {'limit': limit}
         if next_:
             params.update(next=next_)
-        return self.client.get(url=self.CONVERSATIONS_BASE_URL, params=params)
+        return self.client.get(url=url, params=params)
 
     def get_metrics(self, query):
         self._validate_query(query)
