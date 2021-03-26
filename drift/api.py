@@ -38,15 +38,21 @@ class Drift(object):
         response = requests.get(url, headers=self._headers, **kwargs)
         return self._parsed_response(response)
 
+    def get_transcript(self, url, **kwargs):
+        response = requests.get(url, headers=self._headers, **kwargs)
+        return self._parsed_response(response, json_response=False)
+
     def delete(self, url, **kwargs):
         response = requests.delete(url, headers=self._headers, **kwargs)
         return self._parsed_response(response)
 
-    def _parsed_response(self, response):
+    def _parsed_response(self, response, json_response=True):
         try:
             if response.status_code in SERVER_ERRORS:
                 return {'error': DRIFT_ERROR_MESSAGE, 'code': response.status_code}
-            return response.json()
+            elif json_response:
+                return response.json()
+            return response.content
 
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
             return {'error': 'Connection Error'}
