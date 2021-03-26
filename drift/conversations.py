@@ -20,6 +20,11 @@ class Conversation(object):
         params = {'conversationId': conversation_id}
         return self.client.get(url=url, params=params)
 
+    def get_transcript(self, conversation_id):
+        url = "{}/{}/transcript".format(self.CONVERSATIONS_BASE_URL, conversation_id)
+        params = {'conversationId': conversation_id}
+        return self.client.get(url=url, params=params)
+
     def list(self, limit=50, next_=None):
         url = "{}/{}".format(self.CONVERSATIONS_BASE_URL, "list")
         params = {'limit': limit}
