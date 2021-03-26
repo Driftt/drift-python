@@ -1,5 +1,5 @@
-__author__ = 'Lemuel Boyce'
-__version__ = '1.1.0'
+__author__ = 'Drift Engineering'
+__version__ = '1.1.1'
 
 
 from .api import Drift
