@@ -69,7 +69,7 @@ Read the docs here [Conversations API](https://devdocs.drift.com/docs/conversati
     
 - `drift.conversations.list()`
     - limit (optional) - defaults to `50`
-    - next_ (optional)
+    - page_token (optional)
 
 - `drift.conversations.create_message()`
     - conversation_id (required)
