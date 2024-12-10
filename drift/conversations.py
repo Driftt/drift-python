@@ -25,11 +25,12 @@ class Conversation(object):
         params = {'conversationId': conversation_id}
         return self.client.get_transcript(url=url, params=params)
 
-    def list(self, limit=50, next_=None):
+    def list(self, limit=50, page_token=None):
         url = "{}/{}".format(self.CONVERSATIONS_BASE_URL, "list")
-        params = {'limit': limit}
-        if next_:
-            params.update(next=next_)
+        params = {
+            'limit': limit,
+            'page_token': page_token or ''
+        }
         return self.client.get(url=url, params=params)
 
     def get_metrics(self, query):
